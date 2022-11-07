@@ -17,6 +17,6 @@ function showSlides(n){
   slides[slideIndex-1].style.display = "block";
 }
 
-var interval = setInterval(function(){
-  changeSlide(1);
-},2000);
+// var interval = setInterval(function(){
+//   changeSlide(1);
+// },2000);

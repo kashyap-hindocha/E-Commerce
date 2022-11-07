@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="circleStyles.css">
     <title>Nike Store</title>
 </head>
 
@@ -151,36 +156,123 @@
         </div>
     </div>
     <div class="solidWall"></div>
-    <div class="container-fluid">
-        <div class="homePageSlider fade">
-            <span class="imageText">This is text 1</span>
-            <div class="numberOfSlide">1 / 5</div>
-            <img src="/img/slider-1.jpg" alt="sliderImage1" class="width-mx-100">
+    <div class="container d-flex">
+        <div class="column">
+            <section class="services">
+                <div class="circle--slider">
+                  <div class="rotate--circle">
+                    <ul class="circle--rotate" id="circle--rotate">
+                      <li class="block">
+                        <div class="icon"><i class="fa fa-rocket"></i><span> </span></div>
+                      </li>
+                      <li class="block">
+                        <div class="icon"><i class="fa fa-bolt"></i><span> </span></div>
+                      </li>
+                      <li class="block">
+                        <div class="icon"><i class="fa fa-bell"></i><span> </span></div>
+                      </li>
+                      <li class="block">
+                        <div class="icon"><i class="fa fa-cogs"></i><span> </span></div>
+                      </li>
+                      <li class="block">
+                        <div class="icon"><i class="fa fa-desktop"></i><span> </span></div>
+                      </li>
+                    </ul>
+                    <div class="animate-wrapper">
+                      <div class="animate">
+                        <div class="animate-img">
+                          <a href="https://en.wikipedia.org/wiki/Pothole"><div class="animate-img__in"  data-image="&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80">
+                            <div class="animate-more">
+                              <div class="animate-title">
+                                <h4>Web Development</h4>
+                              </div>
+                            </div>
+                          </a>
+                          </div>
+                        </div>
+                      </div></a>
+                      <div class="animate">
+                        <div class="animate-img">
+                          <div class="animate-img__in" data-image="&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80">
+                            <div class="animate-more">
+                              <div class="animate-title">
+                                <h4></h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="animate">
+                        <div class="animate-img">
+                          <div class="animate-img__in" data-image="&amp;auto=format&amp;fit=crop&amp;w=614&amp;q=80">
+                            <div class="animate-more">
+                              <div class="animate-title">
+                                <h4></h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="animate">
+                        <div class="animate-img">
+                          <div class="animate-img__in" data-image="&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80">
+                            <div class="animate-more">
+                              <div class="animate-title">
+                                <h4></h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="animate">
+                        <div class="animate-img">
+                          <div class="animate-img__in" data-image=&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80">
+                            <div class="animate-more">
+                              <div class="animate-title">
+                                <h4></h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
         </div>
-        <div class="homePageSlider fade">
-            <span class="imageText">This is text 2</span>
-            <div class="numberOfSlide">2 / 5</div>
-            <img src="/img/slider-2.jpg" alt="sliderImage2" class="width-mx-100">
+        <div class="column">
+            <section class="services">
+                <div class="homePageSlider fade">
+                    <span class="imageText">This is text 1</span>
+                    <div class="numberOfSlide">1 / 5</div>
+                    <img src="/img/slider-1.jpg" alt="sliderImage1" class="width-mx-100">
+                </div>
+                <div class="homePageSlider fade">
+                    <span class="imageText">This is text 2</span>
+                    <div class="numberOfSlide">2 / 5</div>
+                    <img src="/img/slider-2.jpg" alt="sliderImage2" class="width-mx-100">
+                </div>
+                <div class="homePageSlider fade">
+                    <span class="imageText">This is text 3</span>
+                    <div class="numberOfSlide">3 / 5</div>
+                    <img src="/img/slider-3.jpg" alt="sliderImage3" class="width-mx-100">
+                </div>
+                <div class="homePageSlider fade">
+                    <span class="imageText">This is text 4</span>
+                    <div class="numberOfSlide">4 / 5</div>
+                    <img src="/img/slider-4.jpg" alt="sliderImage4" class="width-mx-100">
+                </div>
+                <div class="homePageSlider fade">
+                    <span class="imageText">This is text 5</span>
+                    <div class="numberOfSlide">5 / 5</div>
+                    <img src="/img/slider-5.jpg" alt="sliderImage5" class="width-mx-100">
+                </div>
+        
+                <!-- Next and previous button -->
+                <a onclick=changeSlide(1) class="next">&#10095;</a>
+                <a onclick=changeSlide(-1) class="prev">&#10094;</a>
+            </section>
         </div>
-        <div class="homePageSlider fade">
-            <span class="imageText">This is text 3</span>
-            <div class="numberOfSlide">3 / 5</div>
-            <img src="/img/slider-3.jpg" alt="sliderImage3" class="width-mx-100">
-        </div>
-        <div class="homePageSlider fade">
-            <span class="imageText">This is text 4</span>
-            <div class="numberOfSlide">4 / 5</div>
-            <img src="/img/slider-4.jpg" alt="sliderImage4" class="width-mx-100">
-        </div>
-        <div class="homePageSlider fade">
-            <span class="imageText">This is text 5</span>
-            <div class="numberOfSlide">5 / 5</div>
-            <img src="/img/slider-5.jpg" alt="sliderImage5" class="width-mx-100">
-        </div>
-
-        <!-- Next and previous button -->
-        <a onclick=changeSlide(1) class="next">&#10095;</a>
-        <a onclick=changeSlide(-1) class="prev">&#10094;</a>
     </div>
     <div class="solidWall"></div>
 
@@ -260,6 +352,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/CircleSlider.js"></script>
 </body>
 
 </html>
