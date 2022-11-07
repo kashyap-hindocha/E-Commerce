@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -448,6 +450,10 @@ footer {
   font-size: 14px;
 }
 
+/* Slider start */
+
+/* Slider end */
+
 @media screen and (max-width:480px) {
   nav{
     padding: 20px;
@@ -529,6 +535,9 @@ footer {
 
   .gallery{
     display: none;
+    position: relative;
+    width: 100vw;
+    height: 400px;
   }
 
   .newSeason{
