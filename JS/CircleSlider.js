@@ -101,13 +101,18 @@
             n * d <= -288 && (p.step = -n * d - 360),
             r(), p.step = u, p.direction = "left", t()
         });
-      var f = i.parent().find("div.next"),
+      f = i.parent().find("div.next"),
         h = i.parent().find("div.prev");
       f.on("click", function () {
         i.is(":animated") || (p.direction = "left", p.step = u, o())
       }), h.on("click", function () {
         i.is(":animated") || (p.direction = "right", p.step = d, o())
       })
+      // ,
+      setInterval(function() {
+        console.log('asd');
+        p.step = u, o();
+      }, 2000)
     })
   }
 }(jQuery));
