@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  overflow-y: hidden;
+}
+
+.d-none {
+  display: none;
+}
+
+.vis-hidden{
+  visibility: hidden;
+}
+
+.night{
+  height: 80vh;
+  width: 150vh;
+  margin: 5rem auto;
+  background: url('./assets/Img_1.png');
+  background-size: cover;
+  position: relative;
+  box-shadow: 1px 2px 60px rgba(0,0,0 0.4);
+  overflow-x: hidden;
+}
+.car {
+  position: absolute;
+  bottom: 44px;
+  left: 275px;
+}
+
+.surface{
+  position: absolute;
+  height: 140px;
+  width: 500%;
+  background-image: url('./assets/Img_02.png');
+  display: block;
+  bottom: 0%;
+  left: 0%;
+  background-repeat: repeat-x;
+}
+
+.instructions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: antiquewhite;
+  margin-top: 50px;
+}
+
+.waitForNextRide{
+  font-size: large;
+  text-align: center;
+  color: red;
+  margin-top: 50px;
+}
+
+.instructions li{
+  margin: 5px 0;                 ;
+}
+
+@-webkit-keyframes moveRight {
+  100%{transform: translateX(-2950px);}
+}
+.moveForward {
+  -webkit-animation: moveRight 6s linear infinite;
+}
+
+@-webkit-keyframes suspension {
+  100%{transform: translateY(-1px);}
+  50%{transform: translateY(-3px);}
+  0%{transform: translateY(-1px);}
+}
+.suspension{
+  -webkit-animation: suspension 0.8s linear infinite; 
+}
+
+@-webkit-keyframes moveCar {
+  0% {left: 25%;}
+  100% {
+    left: 105%;
+  }
+}
+.goAway{
+  -webkit-animation: moveCar 1.5S linear;
+}
+
+@-webkit-keyframes getBackCar {
+  0% {left: 0%;}
+  25% {
+    left: 25%;
+  }
+}
+.getBackTheCar{
+  -webkit-animation: getBackCar 1.5s linear;
+}
